@@ -73,13 +73,3 @@ This project analyzes **hospital readmission data** to uncover patterns and insi
 ```sql
 SELECT refresh_high_risk_patients();
 ```
-
-## 📊 Visualization (Optional)
-Data can be linked to Tableau/Power BI for dashboards.
-
-## 🚀 How to Run
-Create DB, create table, load data, run cleaning + analysis, setup stored procedure.
-
-## 📎 Author
-**Gauri Shinde**  
-[LinkedIn](https://www.linkedin.com/in/gauri-shinde) | [GitHub](https://github.com/your-github)
