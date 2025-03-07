@@ -1,21 +1,21 @@
-# 🏥 Hospital Readmission Analysis (SQL Project)
+# Hospital Readmission Analysis (SQL Project)
 
-## 📋 Project Overview
+## Project Overview
 This project analyzes **hospital readmission data** to uncover patterns and insights related to **patient demographics, medical specialties, procedures, and chronic conditions**. The analysis focuses on **identifying high-risk patients, understanding readmission trends, and providing actionable recommendations for improving healthcare outcomes.**
 
-## 📊 Data Source
+## Data Source
 - Dataset: `hospital_readmissions.csv`
 - Total Rows: 25,000 records
 - Fields: Patient age, specialty, diagnosis, lab procedures, medications, and readmission status
 
-## 🎯 Key Objectives
-✅ Analyze **readmission rates** by department, diagnosis, and age group  
-✅ Identify **high-risk patients** (multiple readmissions)  
-✅ Assess **impact of diabetes management** on readmissions  
-✅ Explore **average length of stay** by specialty  
-✅ Automate data refresh using a **Stored Procedure**
+## Key Objectives
+1. Analyze **readmission rates** by department, diagnosis, and age group  
+2. Identify **high-risk patients** (multiple readmissions)  
+3. Assess **impact of diabetes management** on readmissions  
+4. Explore **average length of stay** by specialty  
+5. Automate data refresh using a **Stored Procedure**
 
-## 🛠️ Tools Used
+## Tools Used
 | Tool | Purpose |
 |---|---|
 | PostgreSQL | Database Management & SQL Queries |
@@ -23,7 +23,7 @@ This project analyzes **hospital readmission data** to uncover patterns and insi
 | Python (for initial analysis) | Exploratory Analysis |
 | GitHub | Version Control & Portfolio Showcase |
 
-## 📂 Folder Structure
+## Folder Structure
 ```
 /hospital_readmission_analysis/
 │-- README.md                    # Project Overview
@@ -38,7 +38,7 @@ This project analyzes **hospital readmission data** to uncover patterns and insi
 │-- insights_report.md            # Key Findings Summary
 ```
 
-## 📑 Database Schema
+## Database Schema
 | Column Name | Data Type | Description |
 |---|---|---|
 | age | VARCHAR(20) | Age group |
@@ -57,19 +57,19 @@ This project analyzes **hospital readmission data** to uncover patterns and insi
 | diabetes_med | VARCHAR(10) | On diabetes meds (yes/no) |
 | readmitted | VARCHAR(10) | Readmitted within 30 days (yes/no) |
 
-## 🔎 Analytical Questions Addressed
+## Analytical Questions Addressed
 - Readmission Rates by Specialty, Diagnosis, and Age
 - High-Risk Patients Analysis
 - Length of Stay Analysis
 - Diabetes Medication Impact
 
-## 💡 Key Findings
+## Key Findings
 - Older patients (70-90 years) have the highest readmission rates.
 - Specialties like Family/General Practice and Emergency have the highest readmissions.
 - Patients on diabetes medications are readmitted more often.
 - Internal Medicine and Surgery patients have the longest stays.
 
-## ⚙️ Stored Procedure Automation
+## Stored Procedure Automation
 ```sql
 SELECT refresh_high_risk_patients();
 ```
